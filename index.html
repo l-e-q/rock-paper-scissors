@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +9,17 @@
 
 <body>
     <p class="title">Rock Paper Scissors</p>
-    <button class="move-button"><img src="./images/rock-emoji.png" alt="rock" class="move-icon js-rock-button"></button>
+    <div class="buttons">
+        <button class="move-button"><img src="./images/rock-emoji.png" alt="rock" class="move-icon js-rock-button"></button>
+        
+        <button class="move-button"><img src="./images/paper-emoji.png" alt="paper" class="move-icon js-paper-button"></button>
+        
+        <button class="move-button"><img src="./images/scissors-emoji.png" alt="scissors" class="move-icon js-scissors-button"></button>
+    </div>
 
-    <button class="move-button"><img src="./images/paper-emoji.png" alt="paper" class="move-icon js-paper-button"></button>
-
-    <button class="move-button"><img src="./images/scissors-emoji.png" alt="scissors" class="move-icon js-scissors-button"></button>
-
-    <p class="js-result result"></p>
-    <p class="js-moves"></p>
-    <p class="js-score score"></p>
+    <div class="js-result result"></div>
+    <div class="js-moves"></div>
+    <div class="js-score score"></div>
 
     <button onclick="
         score.wins = 0;
